@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/*Navigasi Bar*/
+.navbar {
+    height: 70px;
+    background-color: #1e3a8a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+/*Logo*/
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/*Menu*/
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 5px;
+    display: block;
+}
+
+.menu li a:hover {
+    background-color: #3b82f6;
+    border-radius: 5px;
+    color: yellow;
+}
+
+/*Halaman Utama Section Hero*/
+.hero {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    /* background-image: url('../images/hero.jpg'); */
+    /* background-size: cover; */
+}
+
+.hero h1 {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+/* continer */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1e3a8a;
+}
+
+/* content 2 kolom */
+.dua-kolom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.kolom {
+    background-color: #c9c9c9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.kolom h2 {
+    color: #1e3a8a;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.kolom p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* konten 3 kolom */
+.tiga-kolom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* tombol selengkapnya */
+.button {
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 50px auto;
+}
+
+.button:hover {
+    background-color: #3b82f6;
+}
+
+/* icon */
+.icon {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* slider flickity */
+.hero-slider {
+    width: 100%;
+    height: 800px;
+}
+
+.main-carousel {
+    height: 100%;
+}
+
+.carousel-cell {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-cell img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Overlay gelap */
+.carousel-cell::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    /* Gelap transparan */
+    z-index: 1;
+}
+
+/* Tulisan slider */
+.slide-caption {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+    max-width: 700px;
+}
+
+.slide-caption h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.slide-caption p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+/* Tombol */
+.slider-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #1e3a8a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.slider-button:hover {
+    background: #2563eb;
+}
+
+
+
+/* Flickity Slider */
+.hero-slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.main-carousel {
+    width: 100%;
+}
+
+.carousel-cell {
+    width: 100%;
+    height: 900px;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-cell img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-cell::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .45);
+}
+
+.slide-caption {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: #fff;
+    max-width: 750px;
+}
+
+.slide-caption h1 {
+    font-size: 45px;
+    margin: 0 0 15px;
+}
+
+.slide-caption p {
+    font-size: 20px;
+    margin: 0 0 25px;
+}
+
+.slider-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #1e3a8a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.slider-button:hover {
+    background: #2563eb;
+}
+/* flickity */
+
+.flickity-button {
+    background: rgba(255, 255, 255, .85);
+}
+
+.flickity-button:hover {
+    background: #fff;
+}
+
+.flickity-button-icon {
+    fill: #1e3a8a;
+}
+
+.flickity-page-dots {
+    bottom: 20px;
+}
+
+.flickity-page-dots .dot {
+    background: #fff;
+    opacity: .6;
+}
+
+.flickity-page-dots .dot.is-selected {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .carousel-cell {
+        height: 400px;
+    }
+
+    .slide-caption {
+        left: 7%;
+        right: 7%;
+    }
+
+    .slide-caption h1 {
+        font-size: 30px;
+    }
+
+    .slide-caption p {
+        font-size: 16px;
+    }
+}
